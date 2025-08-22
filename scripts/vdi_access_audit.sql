@@ -1,3 +1,4 @@
+-- Note: Full implementation omitted due to federal confidentiality policies.
 -- SQL snippet to audit VDI access logs for compliance
 -- Sanitized for confidentiality
 
