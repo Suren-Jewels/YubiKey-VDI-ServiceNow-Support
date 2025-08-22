@@ -1,3 +1,4 @@
+# Note: Full implementation omitted due to federal confidentiality policies.
 # PowerShell script to simulate YubiKey provisioning via ServiceNow
 # Sanitized for confidentiality
 
