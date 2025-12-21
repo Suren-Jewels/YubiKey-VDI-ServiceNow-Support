@@ -24,28 +24,67 @@ This project highlights hands-on experience with **identity systems, secure acce
 
 ## 🛠️ Tools & Technologies
 
-- **Authentication**: YubiKey (FIDO2, PIV, OTP)
-- **Platforms**: Windows VDI, ServiceNow (identity workflows & access modules)
-- **Identity & Access**: MFA systems, SSO, RBAC, identity providers
-- **Automation**: PowerShell
-- **Security & Monitoring**: Secure logging, monitoring tools
-- **Architecture**: Zero Trust enforcement layers
+### **Technology Stack**
+
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Technologies</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>🔑 Authentication</strong></td>
+<td>YubiKey (FIDO2, PIV, OTP)</td>
+<td>Hardware-based MFA for secure access</td>
+</tr>
+<tr>
+<td><strong>💻 Platforms</strong></td>
+<td>Windows VDI<br>ServiceNow (identity workflows & access modules)</td>
+<td>Virtual desktop infrastructure and service management</td>
+</tr>
+<tr>
+<td><strong>🛡️ Identity & Access</strong></td>
+<td>MFA systems<br>SSO<br>RBAC<br>Identity providers</td>
+<td>Authentication and authorization frameworks</td>
+</tr>
+<tr>
+<td><strong>⚙️ Automation</strong></td>
+<td>PowerShell</td>
+<td>Identity workflow automation and diagnostics</td>
+</tr>
+<tr>
+<td><strong>📊 Security & Monitoring</strong></td>
+<td>Secure logging<br>Monitoring tools</td>
+<td>Audit trails and access analytics</td>
+</tr>
+<tr>
+<td><strong>🏗️ Architecture</strong></td>
+<td>Zero Trust enforcement layers</td>
+<td>Security framework and policy enforcement</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
 ## 🔐 Authentication Workflow Overview
 
-1. User inserts YubiKey and initiates MFA challenge
-2. Identity provider validates token (FIDO2/PIV/OTP)
-3. Access request flows through VDI or ServiceNow authentication layers
-4. RBAC and Zero Trust policies are evaluated
-5. Session is granted or denied based on compliance and identity posture
-6. Logging and monitoring capture authentication events
-7. Troubleshooting workflows are triggered for failures
+### **Step-by-Step Process**
 
----
+| Step | Action | Technology |
+|------|--------|------------|
+| **1** | User inserts YubiKey and initiates MFA challenge | 🔑 YubiKey (FIDO2/PIV/OTP) |
+| **2** | Identity provider validates token | 🛡️ MFA systems, SSO |
+| **3** | Access request flows through VDI or ServiceNow authentication layers | 💻 VDI, ServiceNow |
+| **4** | RBAC and Zero Trust policies are evaluated | 🏗️ Zero Trust framework |
+| **5** | Session is granted or denied based on compliance and identity posture | 🛡️ RBAC, policy engine |
+| **6** | Logging and monitoring capture authentication events | 📊 Audit systems |
+| **7** | Troubleshooting workflows are triggered for failures | ⚙️ PowerShell, diagnostics |
 
-## 🧩 Architecture Overview (Sanitized)
+### **Architecture Diagram**
 ```
 +-----------------------------------------------------------+
 |                 Identity & Access Layer                   |
@@ -71,15 +110,85 @@ This project highlights hands-on experience with **identity systems, secure acce
                 +---------------------------+
 ```
 
+### **System Components**
+
+| Layer | Components | Function |
+|-------|------------|----------|
+| 🔑 **Identity & Access** | YubiKey, MFA, SSO, RBAC, Zero Trust | Authentication and policy enforcement |
+| 💻 **VDI Access** | Windows Virtual Desktops | Secure remote desktop infrastructure |
+| 📋 **ServiceNow** | Identity workflows, Access modules | Service management and ticketing |
+| 📊 **Monitoring** | Logging, Audit systems | Compliance tracking and analytics |
+
+---
+
+## 🔧 Common Troubleshooting Scenarios
+
+<table>
+<thead>
+<tr>
+<th>Issue Type</th>
+<th>Symptoms</th>
+<th>Resolution Approach</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>🔑 YubiKey Failures</strong></td>
+<td>Token not recognized, authentication timeout</td>
+<td>Verify USB connection, check driver status, validate token registration</td>
+</tr>
+<tr>
+<td><strong>💻 VDI Access Issues</strong></td>
+<td>Cannot connect to virtual desktop, session denied</td>
+<td>Check RBAC permissions, validate Zero Trust policies, review network connectivity</td>
+</tr>
+<tr>
+<td><strong>📋 ServiceNow Auth</strong></td>
+<td>SSO failures, identity provider errors</td>
+<td>Verify SSO configuration, check identity provider logs, validate user attributes</td>
+</tr>
+<tr>
+<td><strong>🛡️ Policy Violations</strong></td>
+<td>Access denied due to compliance check</td>
+<td>Review Zero Trust policies, verify device posture, check user roles</td>
+</tr>
+</tbody>
+</table>
+
 ---
 
 ## ✅ Key Outcomes
 
-- Improved authentication reliability across VDI and ServiceNow
-- Reduced MFA-related incidents through structured troubleshooting
-- Strengthened Zero Trust enforcement and identity posture
-- Enhanced user experience with secure access workflows
-- Supported enterprise and federal-aligned environments requiring high-assurance identity controls
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>🔒 Reliability</strong></td>
+<td>Improved authentication reliability across VDI and ServiceNow</td>
+</tr>
+<tr>
+<td><strong>📉 Incidents</strong></td>
+<td>Reduced MFA-related incidents through structured troubleshooting</td>
+</tr>
+<tr>
+<td><strong>🛡️ Security</strong></td>
+<td>Strengthened Zero Trust enforcement and identity posture</td>
+</tr>
+<tr>
+<td><strong>✨ User Experience</strong></td>
+<td>Enhanced user experience with secure access workflows</td>
+</tr>
+<tr>
+<td><strong>🏛️ Compliance</strong></td>
+<td>Supported enterprise and federal-aligned environments requiring high-assurance identity controls</td>
+</tr>
+</tbody>
+</table>
 
 ---
 
