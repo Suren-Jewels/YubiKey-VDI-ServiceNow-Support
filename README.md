@@ -83,6 +83,17 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 
 ---
 
+## 🚀 Key Achievements
+
+| Metric | Achievement | Impact |
+|--------|-------------|--------|
+| 🔐 Authentication Reliability | Stabilized YubiKey MFA across VDI environments | Reduced login failures and support escalations |
+| 🛠️ Troubleshooting Speed | Built diagnostic workflows for identity issues | Accelerated root‑cause analysis and resolution |
+| 🧩 Integration Quality | Improved compatibility between VDI, IdP, and YubiKey | Ensured seamless authentication across systems |
+| 📈 User Experience | Reduced friction during secure login | Increased adoption and reduced helpdesk load |
+
+---
+
 ## 🧱 Architecture Overview
 ```
 +-----------------------------------------------------------+
