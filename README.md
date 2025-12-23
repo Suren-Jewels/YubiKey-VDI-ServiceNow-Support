@@ -54,8 +54,6 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 
 ---
 
-## 🛠️ Tools & Technologies
-
 ### Technology Stack
 
 | Category | Technologies | Purpose |
