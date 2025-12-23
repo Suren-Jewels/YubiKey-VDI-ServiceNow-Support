@@ -67,12 +67,6 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 
 ---
 
-## 📷 Architecture Diagram
-
-![YubiKey + VDI + ServiceNow Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
-
----
-
 ## 🧱 Architecture Overview
 ```
 +-----------------------------------------------------------+
