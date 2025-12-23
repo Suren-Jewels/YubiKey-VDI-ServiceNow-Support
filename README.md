@@ -32,14 +32,15 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 
 ---
 
-## 🧩 Challenges Solved
+## 🧩 Engineering Challenges Solved
 
-- Resolved YubiKey token failures and driver issues across Windows and VDI
-- Diagnosed SSO and identity provider errors impacting ServiceNow access
-- Identified RBAC misconfigurations causing session denials
-- Improved Zero Trust policy alignment across multiple access layers
-- Reduced MFA-related incidents through structured troubleshooting workflows
-- Enhanced user onboarding and identity recovery processes
+| Area | Challenge | Outcome |
+|------|-----------|---------|
+| 🔑 YubiKey MFA Reliability | Intermittent token failures, driver issues, and inconsistent recognition across endpoints | Standardized diagnostics and remediation steps, reducing repeated incidents and support overhead |
+| 💻 VDI Access Stability | Users unable to reach virtual desktops due to policy, RBAC, or posture checks | Tuned access policies and clarified RBAC mappings, improving successful session rates |
+| 📋 ServiceNow Identity Flows | Broken or confusing access request and identity recovery workflows | Refined ServiceNow catalog flows and documentation, reducing ticket friction and escalation load |
+| 🛡️ Zero Trust Alignment | Access denials caused by misaligned posture and policy definitions | Mapped identity posture checks to clear policies, improving predictability and auditability |
+| 📊 Audit & Monitoring Gaps | Incomplete traceability for failed authentication events | Enhanced logging patterns and troubleshooting runbooks, improving time-to-resolution for MFA issues |
 
 ---
 
@@ -181,18 +182,6 @@ YubiKey-VDI-ServiceNow-Support/
 
 ---
 
-## 🧩 Engineering Challenges Solved
-
-| Area | Challenge | Outcome |
-|------|-----------|---------|
-| 🔑 YubiKey MFA Reliability | Intermittent token failures, driver issues, and inconsistent recognition across endpoints | Standardized diagnostics and remediation steps, reducing repeated incidents and support overhead |
-| 💻 VDI Access Stability | Users unable to reach virtual desktops due to policy, RBAC, or posture checks | Tuned access policies and clarified RBAC mappings, improving successful session rates |
-| 📋 ServiceNow Identity Flows | Broken or confusing access request and identity recovery workflows | Refined ServiceNow catalog flows and documentation, reducing ticket friction and escalation load |
-| 🛡️ Zero Trust Alignment | Access denials caused by misaligned posture and policy definitions | Mapped identity posture checks to clear policies, improving predictability and auditability |
-| 📊 Audit & Monitoring Gaps | Incomplete traceability for failed authentication events | Enhanced logging patterns and troubleshooting runbooks, improving time-to-resolution for MFA issues |
-
----
-
 ## 🚀 Deployment Workflow
 
 | Stage | Description |
@@ -235,3 +224,12 @@ Only high-level engineering concepts and troubleshooting patterns are described.
 Senior Cloud Engineer | Infrastructure & Security Specialist
 
 *For inquiries about this project or collaboration opportunities, please reach out via LinkedIn.*
+
+## 📄 License
+
+This repository contains fully sanitized, non‑sensitive documentation and support patterns for YubiKey MFA, VDI access, and ServiceNow identity workflows.  
+All content is provided strictly for educational and portfolio demonstration purposes.
+
+No proprietary configurations, internal authentication logic, or confidential operational details are included.
+
+You may reference or adapt the public patterns in this repository, but all real‑world implementations must follow your organization’s security, compliance, and identity governance requirements.
