@@ -225,6 +225,8 @@ Senior Cloud Engineer | Infrastructure & Security Specialist
 
 *For inquiries about this project or collaboration opportunities, please reach out via LinkedIn.*
 
+---
+
 ## 📄 License
 
 This repository contains fully sanitized, non‑sensitive documentation and support patterns for YubiKey MFA, VDI access, and ServiceNow identity workflows.  
