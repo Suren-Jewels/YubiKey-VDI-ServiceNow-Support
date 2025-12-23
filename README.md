@@ -1,13 +1,45 @@
-# 🔐 YubiKey, VDI & ServiceNow Secure Access Support  
+# 🔐 YubiKey, VDI & ServiceNow Secure Access Support
 **Identity Engineering • MFA • Zero Trust • Enterprise VDI • Access Reliability**
 
 ## 📌 Overview
 
-This repository documents engineering work supporting **secure authentication, YubiKey MFA, VDI access, and ServiceNow identity workflows** across enterprise and federal-aligned environments.
+This repository documents engineering work supporting secure authentication, YubiKey MFA, VDI access, and ServiceNow identity workflows across enterprise and federal-aligned environments.
 
 The focus was on improving authentication reliability, troubleshooting MFA failures, and ensuring seamless access to mission-critical systems.
 
-This project highlights hands-on experience with **identity systems, secure access engineering, and Zero Trust authentication models**.
+This project highlights hands-on experience with identity systems, secure access engineering, and Zero Trust authentication models.
+
+---
+
+## 🧠 System Summary
+
+This system provides secure, hardware-backed authentication across VDI, Windows, and ServiceNow environments using YubiKey MFA.
+
+It integrates identity providers, Zero Trust enforcement layers, and access workflows to ensure reliable authentication for thousands of users.
+
+The system supports token validation, session authorization, compliance checks, and troubleshooting workflows across multiple access layers.
+
+---
+
+## ⭐ Why This Work Matters
+
+Strong authentication is essential for protecting enterprise and federal-aligned systems:
+
+- **YubiKey MFA** significantly reduces credential theft, phishing, and unauthorized access
+- Ensures reliable authentication across VDI and ServiceNow
+- Strengthens Zero Trust posture
+- Reduces access failures and improves user experience for mission-critical workflows
+
+---
+
+## 🧩 Challenges Solved
+
+- Resolved YubiKey token failures and driver issues across Windows and VDI
+- Diagnosed SSO and identity provider errors impacting ServiceNow access
+- Identified RBAC misconfigurations causing session denials
+- Improved Zero Trust policy alignment across multiple access layers
+- Reduced MFA-related incidents through structured troubleshooting workflows
+- Enhanced user onboarding and identity recovery processes
 
 ---
 
@@ -24,67 +56,26 @@ This project highlights hands-on experience with **identity systems, secure acce
 
 ## 🛠️ Tools & Technologies
 
-### **Technology Stack**
+### Technology Stack
 
-<table>
-<thead>
-<tr>
-<th>Category</th>
-<th>Technologies</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>🔑 Authentication</strong></td>
-<td>YubiKey (FIDO2, PIV, OTP)</td>
-<td>Hardware-based MFA for secure access</td>
-</tr>
-<tr>
-<td><strong>💻 Platforms</strong></td>
-<td>Windows VDI<br>ServiceNow (identity workflows & access modules)</td>
-<td>Virtual desktop infrastructure and service management</td>
-</tr>
-<tr>
-<td><strong>🛡️ Identity & Access</strong></td>
-<td>MFA systems<br>SSO<br>RBAC<br>Identity providers</td>
-<td>Authentication and authorization frameworks</td>
-</tr>
-<tr>
-<td><strong>⚙️ Automation</strong></td>
-<td>PowerShell</td>
-<td>Identity workflow automation and diagnostics</td>
-</tr>
-<tr>
-<td><strong>📊 Security & Monitoring</strong></td>
-<td>Secure logging<br>Monitoring tools</td>
-<td>Audit trails and access analytics</td>
-</tr>
-<tr>
-<td><strong>🏗️ Architecture</strong></td>
-<td>Zero Trust enforcement layers</td>
-<td>Security framework and policy enforcement</td>
-</tr>
-</tbody>
-</table>
+| Category | Technologies | Purpose |
+|---------|--------------|---------|
+| 🔑 Authentication | YubiKey (FIDO2, PIV, OTP) | Hardware-based MFA |
+| 💻 Platforms | Windows VDI, ServiceNow | Virtual desktops & identity workflows |
+| 🛡️ Identity & Access | MFA systems, SSO, RBAC, IdP | Authentication & authorization |
+| ⚙️ Automation | PowerShell, SQL | Diagnostics & workflow automation |
+| 📊 Monitoring | Secure logging, audit tools | Compliance & access analytics |
+| 🏗️ Architecture | Zero Trust enforcement | Policy & identity posture |
 
 ---
 
-## 🔐 Authentication Workflow Overview
+## 📷 Architecture Diagram
 
-### **Step-by-Step Process**
+![YubiKey + VDI + ServiceNow Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
 
-| Step | Action | Technology |
-|------|--------|------------|
-| **1** | User inserts YubiKey and initiates MFA challenge | 🔑 YubiKey (FIDO2/PIV/OTP) |
-| **2** | Identity provider validates token | 🛡️ MFA systems, SSO |
-| **3** | Access request flows through VDI or ServiceNow authentication layers | 💻 VDI, ServiceNow |
-| **4** | RBAC and Zero Trust policies are evaluated | 🏗️ Zero Trust framework |
-| **5** | Session is granted or denied based on compliance and identity posture | 🛡️ RBAC, policy engine |
-| **6** | Logging and monitoring capture authentication events | 📊 Audit systems |
-| **7** | Troubleshooting workflows are triggered for failures | ⚙️ PowerShell, diagnostics |
+---
 
-### **Architecture Diagram**
+## 🧱 Architecture Overview
 ```
 +-----------------------------------------------------------+
 |                 Identity & Access Layer                   |
@@ -92,103 +83,84 @@ This project highlights hands-on experience with **identity systems, secure acce
 +---------------------------+-------------------------------+
                             |
                             v
-                +---------------------------+
-                |     VDI Access Layer      |
-                | Windows • Virtual Desktops|
-                +-------------+-------------+
+              +---------------------------+
+              |     VDI Access Layer      |
+              | Windows • Virtual Desktops|
+              +-------------+-------------+
                             |
                             v
-                +---------------------------+
-                |   ServiceNow Workflows    |
-                |  Access • Tickets • Logs  |
-                +-------------+-------------+
+              +---------------------------+
+              |   ServiceNow Workflows    |
+              |  Access • Tickets • Logs  |
+              +-------------+-------------+
                             |
                             v
-                +---------------------------+
-                |  Logging & Monitoring     |
-                |  Audit • Compliance       |
-                +---------------------------+
+              +---------------------------+
+              |  Logging & Monitoring     |
+              |  Audit • Compliance       |
+              +---------------------------+
 ```
 
-### **System Components**
+---
 
-| Layer | Components | Function |
-|-------|------------|----------|
-| 🔑 **Identity & Access** | YubiKey, MFA, SSO, RBAC, Zero Trust | Authentication and policy enforcement |
-| 💻 **VDI Access** | Windows Virtual Desktops | Secure remote desktop infrastructure |
-| 📋 **ServiceNow** | Identity workflows, Access modules | Service management and ticketing |
-| 📊 **Monitoring** | Logging, Audit systems | Compliance tracking and analytics |
+### 📷 Visual Architecture Diagram (PNG)
+
+![YubiKey + VDI + ServiceNow Secure Access Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
+
+---
+
+## 🔐 Authentication Workflow
+
+| Step | Action | Technology |
+|------|--------|------------|
+| 1 | User inserts YubiKey and initiates MFA challenge | YubiKey |
+| 2 | Identity provider validates token | MFA, SSO |
+| 3 | Access request flows through VDI or ServiceNow | VDI, ServiceNow |
+| 4 | RBAC and Zero Trust policies are evaluated | Zero Trust |
+| 5 | Session granted or denied based on compliance | RBAC, policy engine |
+| 6 | Logging captures authentication events | Audit systems |
+| 7 | Troubleshooting workflows triggered for failures | PowerShell, SQL |
 
 ---
 
 ## 🔧 Common Troubleshooting Scenarios
 
-<table>
-<thead>
-<tr>
-<th>Issue Type</th>
-<th>Symptoms</th>
-<th>Resolution Approach</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>🔑 YubiKey Failures</strong></td>
-<td>Token not recognized, authentication timeout</td>
-<td>Verify USB connection, check driver status, validate token registration</td>
-</tr>
-<tr>
-<td><strong>💻 VDI Access Issues</strong></td>
-<td>Cannot connect to virtual desktop, session denied</td>
-<td>Check RBAC permissions, validate Zero Trust policies, review network connectivity</td>
-</tr>
-<tr>
-<td><strong>📋 ServiceNow Auth</strong></td>
-<td>SSO failures, identity provider errors</td>
-<td>Verify SSO configuration, check identity provider logs, validate user attributes</td>
-</tr>
-<tr>
-<td><strong>🛡️ Policy Violations</strong></td>
-<td>Access denied due to compliance check</td>
-<td>Review Zero Trust policies, verify device posture, check user roles</td>
-</tr>
-</tbody>
-</table>
+| Issue Type | Symptoms | Resolution |
+|------------|----------|------------|
+| 🔑 YubiKey Failures | Token not recognized, timeout | Check USB, drivers, token registration |
+| 💻 VDI Access Issues | Session denied, cannot connect | Validate RBAC, Zero Trust, network |
+| 📋 ServiceNow Auth | SSO failures, IdP errors | Check IdP logs, SSO config, attributes |
+| 🛡️ Policy Violations | Access denied due to posture | Review Zero Trust, device posture, roles |
 
 ---
 
-## ✅ Key Outcomes
+## 📁 Repository Structure
+```
+YubiKey-VDI-ServiceNow-Support/
+│
+├── docs/
+│   ├── architecture_overview.md
+│   └── confidentiality_note.md
+│
+├── scripts/
+│   ├── vdi_access_audit.sql
+│   └── yubikey_request_flow.ps1
+│
+├── Yubikey_VDI_Secure_Access_Architecture.png
+└── README.md
+```
 
-<table>
-<thead>
-<tr>
-<th>Area</th>
-<th>Impact</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>🔒 Reliability</strong></td>
-<td>Improved authentication reliability across VDI and ServiceNow</td>
-</tr>
-<tr>
-<td><strong>📉 Incidents</strong></td>
-<td>Reduced MFA-related incidents through structured troubleshooting</td>
-</tr>
-<tr>
-<td><strong>🛡️ Security</strong></td>
-<td>Strengthened Zero Trust enforcement and identity posture</td>
-</tr>
-<tr>
-<td><strong>✨ User Experience</strong></td>
-<td>Enhanced user experience with secure access workflows</td>
-</tr>
-<tr>
-<td><strong>🏛️ Compliance</strong></td>
-<td>Supported enterprise and federal-aligned environments requiring high-assurance identity controls</td>
-</tr>
-</tbody>
-</table>
+---
+
+## 📂 Key Files
+
+| File | Description |
+|------|-------------|
+| [`architecture_overview.md`](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/docs/architecture_overview.md) | High-level identity & access architecture |
+| [`confidentiality_note.md`](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/docs/confidentiality_note.md) | Sanitized NDA-aligned notice |
+| [`vdi_access_audit.sql`](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/scripts/vdi_access_audit.sql) | VDI access validation and audit queries |
+| [`yubikey_request_flow.ps1`](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/scripts/yubikey_request_flow.ps1) | YubiKey request and troubleshooting workflow |
+| `Yubikey_VDI_Secure_Access_Architecture.png` | Architecture diagram |
 
 ---
 
