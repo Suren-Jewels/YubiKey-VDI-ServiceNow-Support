@@ -223,7 +223,7 @@ YubiKey-VDI-ServiceNow-Support/
 
 •••••••••••••••
 
-## 🔑 Key Files
+## 📄 Key Files
 
 | File | Description |
 |------|-------------|
