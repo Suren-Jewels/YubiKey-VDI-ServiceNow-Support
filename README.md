@@ -29,7 +29,7 @@ This project highlights hands-on experience with identity systems, secure access
 | 📊 Monitoring | Secure logging, audit tools | Compliance & access analytics |
 | 🏗️ Architecture | Zero Trust enforcement | Policy & identity posture |
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 🧠 System Summary
 
@@ -48,7 +48,7 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 - Strengthens Zero Trust posture
 - Reduces access failures and improves user experience for mission-critical workflows
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 🧱 Architecture Overview
 ```
@@ -105,7 +105,7 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 | **Security Event Logging** | Analyzes MFA events, token insertions, challenge‑response logs, and audit trail completeness. |
 | **User Experience Metrics** | Measures login friction, MFA prompt frequency, and overall authentication latency. |
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 🔐 Authentication Workflow
 
@@ -145,7 +145,7 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 | 📋 ServiceNow Auth | SSO failures, IdP errors | Check IdP logs, SSO config, attributes |
 | 🛡️ Policy Violations | Access denied due to posture | Review Zero Trust, device posture, roles |
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 🚀 Deployment Workflow
 
@@ -195,7 +195,7 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 | 🛡️ Zero Trust Alignment | Access denials caused by misaligned posture and policy definitions | Mapped identity posture checks to clear policies, improving predictability and auditability |
 | 📊 Audit & Monitoring Gaps | Incomplete traceability for failed authentication events | Enhanced logging patterns and troubleshooting runbooks, improving time-to-resolution for MFA issues |
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 📁 Repository Structure
 ```
@@ -233,7 +233,7 @@ YubiKey-VDI-ServiceNow-Support/
 | [`yubikey_request_flow.ps1`](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/scripts/yubikey_request_flow.ps1) | YubiKey request and troubleshooting workflow |
 | `Yubikey_VDI_Secure_Access_Architecture.png` | Architecture diagram |
 
-───────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────
 
 ## 🔒 Confidentiality Notice
 
@@ -255,10 +255,4 @@ Senior Cloud Engineer | Infrastructure & Security Specialist
 
 *For inquiries about this project or collaboration opportunities, please reach out via LinkedIn.*
 
-───────────────────────────────────────────────────────────────────────────────
-
-
-
-No proprietary configurations, internal authentication logic, or confidential operational details are included.
-
-You may reference or adapt the public patterns in this repository, but all real‑world implementations must follow your organization’s security, compliance, and identity governance requirements.
+────────────────────────────────────────────────────────────────────────
