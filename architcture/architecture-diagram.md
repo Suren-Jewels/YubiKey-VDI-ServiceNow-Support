@@ -1,10 +1,25 @@
 # YubiKey‑Security Zero Trust Architecture — High‑Level Diagram
 
-This document provides a conceptual view of how identity, authentication, posture, and access controls interact across VDI, ServiceNow, and IL4/IL5 federal environments. The diagram illustrates the flow of trust from the user and device through authentication gateways and into protected enclaves.
+This document provides a conceptual overview of how identity, authentication, posture, and access controls interact across VDI, ServiceNow, and IL4/IL5 federal environments. It illustrates the flow of trust from adjudicated users and compliant devices through authentication gateways and posture validation into protected enclaves.
 
 ---
 
-## 🖼️ High‑Level Architecture Diagram (Conceptual)
+## 🖼️ High‑Level Architecture Diagram
+
+![YubiKey‑Security Architecture Diagram](architecture/Yubikey-Security_Zero-trust.png)
+
+---
+
+![YubiKey + VDI + ServiceNow Secure Access Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
+
+---
+
+## 🖼️ High‑Level Architecture Diagram (ASCII)
+
+
+---
+
+## 🖼️ High‑Level Architecture Diagram (ASCII)
 
 ```
         ┌──────────────────────────┐
@@ -64,13 +79,14 @@ This document provides a conceptual view of how identity, authentication, postur
 
 ### **3. Identity Providers**
 - SNCA v2/v3/legacy routing  
-- Okta MFA for specific domains  
+- Okta MFA for scoped domains  
 - Certificate‑based authentication  
 
 ### **4. Posture Validation**
 - Encryption status  
 - OS health and protection  
 - Device identity merged with user identity  
+- Continuous posture evaluation  
 
 ### **5. Access Gateways**
 - VDI brokers  
