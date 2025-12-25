@@ -1,29 +1,89 @@
-# YubiKey Authentication Flow — Diagram Explanation
+# YubiKey‑Security Zero Trust Architecture — High‑Level Diagram
 
-The diagram illustrates the end‑to‑end identity workflow from adjudication to enclave access.
+This document provides a conceptual view of how identity, authentication, posture, and access controls interact across VDI, ServiceNow, and IL4/IL5 federal environments. The diagram illustrates the flow of trust from the user and device through authentication gateways and into protected enclaves.
 
-## 1. Identity Proofing & Issuance
-- User completes adjudication process  
-- Identity verified using **two government‑issued photo IDs**  
-- GCC / NSC / ADM YubiKey assigned based on role  
+---
 
-## 2. PIV Certificate Provisioning
-- PIV slots written to the YubiKey  
-- Certificates mapped to identity attributes  
-- ADM keys receive elevated certificate profiles  
+## 🖼️ High‑Level Architecture Diagram (Conceptual)
 
-## 3. Authentication Path
-Depending on user group:
-- **SNCA v2/v3/legacy routing**  
-- **Okta MFA** for specific identity domains  
-- Certificate validation performed at the gateway  
+```
+        ┌──────────────────────────┐
+        │      User + Device       │
+        │  (Adjudicated Personnel) │
+        └─────────────┬────────────┘
+                      │
+                      ▼
+        ┌──────────────────────────┐
+        │     YubiKey Hardware     │
+        │  (GCC / NSC / ADM Keys)  │
+        └─────────────┬────────────┘
+                      │  PIV Cert
+                      ▼
+        ┌──────────────────────────┐
+        │   Identity Providers     │
+        │  SNCA v2/v3/Legacy, MFA  │
+        │        Okta (Scoped)     │
+        └─────────────┬────────────┘
+                      │  AuthN
+                      ▼
+        ┌──────────────────────────┐
+        │   Posture Validation     │
+        │  Encryption • OS Health  │
+        │  Device Identity Checks  │
+        └─────────────┬────────────┘
+                      │  Trust Score
+                      ▼
+        ┌──────────────────────────┐
+        │     Access Gateways      │
+        │  VDI • ServiceNow • IL4  │
+        │       IL5 Enclaves       │
+        └─────────────┬────────────┘
+                      │  Conditional Access
+                      ▼
+        ┌──────────────────────────┐
+        │   Authorized Resources   │
+        │  Virtual Desktops (VDI)  │
+        │  ServiceNow Workflows    │
+        │  Federal IL4/IL5 Apps    │
+        └──────────────────────────┘
+```
 
-## 4. Posture + Identity Merge
-- Endpoint compliance validated  
-- Encryption, OS health, and protection signals merged with identity  
+---
 
-## 5. Access Decision
-- IL4/IL5 enclave segmentation  
-- VDI gateway enforcement  
+## 🔍 Flow Explanation
+
+### **1. User & Device**
+- Adjudicated personnel  
+- Managed or compliant endpoints  
+- Device identity contributes to trust  
+
+### **2. YubiKey Hardware Token**
+- GCC / NSC / ADM keys  
+- Hardware‑rooted PIV certificate  
+- Identity separation by role  
+
+### **3. Identity Providers**
+- SNCA v2/v3/legacy routing  
+- Okta MFA for specific domains  
+- Certificate‑based authentication  
+
+### **4. Posture Validation**
+- Encryption status  
+- OS health and protection  
+- Device identity merged with user identity  
+
+### **5. Access Gateways**
+- VDI brokers  
 - ServiceNow access routing  
-- Continuous Zero Trust evaluation  
+- IL4/IL5 enclave segmentation  
+- Zero Trust conditional access  
+
+### **6. Authorized Resources**
+- Virtual desktops  
+- ServiceNow workflows  
+- Federal enclave applications  
+
+---
+
+## 📘 Scope
+This diagram provides a conceptual overview only. It excludes implementation details, routing logic, certificate profiles, and enclave‑specific configurations.
