@@ -6,7 +6,7 @@ This document provides a conceptual overview of how identity, authentication, po
 
 ## 🖼️ High‑Level Architecture Diagram
 
-![YubiKey‑Security Architecture Diagram](architecture/Yubikey-Security_Zero-trust.png)
+![YubiKey‑Security Architecture Diagram](architcture/Yubikey-Security_Zero-trust.png)
 
 ---
 
