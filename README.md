@@ -48,47 +48,7 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 - Strengthens Zero Trust posture
 - Reduces access failures and improves user experience for mission-critical workflows
 
-## 📊 Metrics Analyzed
 
-| Metric Category | Description |
-|-----------------|-------------|
-| **Authentication Success Rates** | Tracks successful vs. failed YubiKey authentication attempts across VDI sessions. |
-| **Token Usage Patterns** | Measures frequency, timing, and distribution of hardware token usage across user groups. |
-| **Session Establishment Times** | Monitors how long it takes users to authenticate and launch VDI sessions. |
-| **Endpoint Posture Compliance** | Evaluates device health checks, OS patch levels, and security posture before session access. |
-| **Access Denial Reasons** | Categorizes failures (invalid token, expired certificate, policy violation, device non‑compliance). |
-| **VDI Session Stability** | Tracks disconnects, reconnections, and session reliability under load. |
-| **Security Event Logging** | Analyzes MFA events, token insertions, challenge‑response logs, and audit trail completeness. |
-| **User Experience Metrics** | Measures login friction, MFA prompt frequency, and overall authentication latency. |
-
-────────────────────────────────────────────────────────────────────────
-
-## 🔐 Authentication Workflow
-
-| Step | Action | Technology |
-|------|--------|------------|
-| 1 | User inserts YubiKey and initiates MFA challenge | YubiKey |
-| 2 | Identity provider validates token | MFA, SSO |
-| 3 | Access request flows through VDI or ServiceNow | VDI, ServiceNow |
-| 4 | RBAC and Zero Trust policies are evaluated | Zero Trust |
-| 5 | Session granted or denied based on compliance | RBAC, policy engine |
-| 6 | Logging captures authentication events | Audit systems |
-| 7 | Troubleshooting workflows triggered for failures | PowerShell, SQL |
-
-•••••••••••••••
-
-## 📈 Secure Access Workflow
-
-| Stage | Description |
-|-------|-------------|
-| 1. YubiKey Provisioning | Configure YubiKey profiles (FIDO2/PIV/OTP), enroll users, and validate token registration |
-| 2. Identity Provider Validation | Test MFA + SSO flows, confirm RBAC mappings, and verify posture/policy evaluation |
-| 3. VDI Access Integration | Validate MFA enforcement at VDI entry points, session brokering, and compliant access behavior |
-| 4. ServiceNow Workflow Alignment | Ensure catalog items, identity workflows, and access request processes function end‑to‑end |
-| 5. Logging & Monitoring Enablement | Confirm audit trails capture MFA, VDI, and ServiceNow authentication events |
-| 6. Troubleshooting Playbook Execution | Run diagnostics for token failures, SSO issues, RBAC mismatches, and posture denials |
-| 7. User Experience Validation | Test login flows, recovery paths, and ensure predictable access behavior for end users |
-| 8. Compliance Review | Validate Zero Trust alignment, audit completeness, and identity posture requirements |
 
 •••••••••••••••
 
