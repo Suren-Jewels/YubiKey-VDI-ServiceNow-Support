@@ -49,20 +49,6 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 - Reduces access failures and improves user experience for mission-critical workflows
 
 
-
-•••••••••••••••
-
-## 🔧 Common Troubleshooting Scenarios
-
-| Issue Type | Symptoms | Resolution |
-|------------|----------|------------|
-| 🔑 YubiKey Failures | Token not recognized, timeout | Check USB, drivers, token registration |
-| 💻 VDI Access Issues | Session denied, cannot connect | Validate RBAC, Zero Trust, network |
-| 📋 ServiceNow Auth | SSO failures, IdP errors | Check IdP logs, SSO config, attributes |
-| 🛡️ Policy Violations | Access denied due to posture | Review Zero Trust, device posture, roles |
-
-────────────────────────────────────────────────────────────────────────
-
 ## 🚀 Deployment Workflow
 
 **Pipeline:** *[CI] → [CD] → [Prod]*
@@ -128,16 +114,6 @@ YubiKey-VDI-ServiceNow-Support/
 ├── Yubikey_VDI_Secure_Access_Architecture.png
 └── README.md
 ```
-
-### 📁 Directory Descriptions
-
-| Directory | Purpose |
-|-----------|---------|
-| `doc/` | High‑level architecture notes, workflow overviews, and sanitized identity documentation |
-| `scripts/` | PowerShell tools for YubiKey diagnostics, VDI access validation, and ServiceNow log parsing |
-| `diagrams/` | Visual architecture diagrams, including the YubiKey + VDI + ServiceNow PNG |
-
-•••••••••••••••
 
 ## 📄 Key Files
 
