@@ -80,18 +80,6 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 
 ![YubiKey + VDI + ServiceNow Secure Access Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
 
-## 🧩 Architecture Layers
-
-| Layer | Description |
-|-------|-------------|
-| **1. Identity & Access Layer** | Enforces user authentication using YubiKey hardware tokens, MFA policies, and identity provider integration. |
-| **2. Endpoint Security Layer** | Validates device posture, ensures secure USB interface handling, and applies OS‑level hardening for VDI endpoints. |
-| **3. Virtual Desktop Infrastructure (VDI) Layer** | Hosts virtual desktops, manages session brokering, and enforces secure access to enterprise applications. |
-| **4. Connection Broker Layer** | Routes authenticated users to the correct VDI pools, applies access rules, and manages session lifecycle. |
-| **5. Network Security Layer** | Applies segmentation, firewall rules, and encrypted transport between clients, brokers, and VDI hosts. |
-| **6. Logging & Monitoring Layer** | Captures authentication events, token usage, session activity, and security alerts for audit and compliance. |
-| **7. Compliance & Policy Enforcement Layer** | Ensures adherence to MFA requirements, Zero Trust principles, and enterprise security standards. |
-
 ## 📊 Metrics Analyzed
 
 | Metric Category | Description |
