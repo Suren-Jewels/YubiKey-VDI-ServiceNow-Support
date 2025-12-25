@@ -1,0 +1,35 @@
+{
+  "policy_id": "ACCESS-POLICY-EXAMPLE",
+  "description": "Sanitized Zero Trust access policy for demonstration purposes.",
+  "requirements": {
+    "identity": {
+      "certificate_valid": true,
+      "mfa_required": true,
+      "allowed_certificate_profiles": [
+        "GCC",
+        "NSC",
+        "ADM"
+      ]
+    },
+    "device_posture": {
+      "minimum_trust_score": 80,
+      "required_attributes": [
+        "encryption_enabled",
+        "os_up_to_date",
+        "endpoint_protection_active",
+        "secure_boot_enabled"
+      ]
+    },
+    "rbac": {
+      "required_roles": [
+        "VDI_User",
+        "ServiceNow_Access"
+      ]
+    }
+  },
+  "access_decision": {
+    "on_success": "grant",
+    "on_failure": "deny"
+  },
+  "last_updated": "2025-01-20T14:32:00Z"
+}
