@@ -48,38 +48,6 @@ Strong authentication is essential for protecting enterprise and federal-aligned
 - Strengthens Zero Trust posture
 - Reduces access failures and improves user experience for mission-critical workflows
 
-────────────────────────────────────────────────────────────────────────
-
-## 🧱 Architecture Overview
-```
-+-----------------------------------------------------------+
-|                 Identity & Access Layer                   |
-|     YubiKey • MFA • SSO • RBAC • Zero Trust Policies      |
-+---------------------------+-------------------------------+
-                            |
-                            v
-              +---------------------------+
-              |     VDI Access Layer      |
-              | Windows • Virtual Desktops|
-              +-------------+-------------+
-                            |
-                            v
-              +---------------------------+
-              |   ServiceNow Workflows    |
-              |  Access • Tickets • Logs  |
-              +-------------+-------------+
-                            |
-                            v
-              +---------------------------+
-              |  Logging & Monitoring     |
-              |  Audit • Compliance       |
-              +---------------------------+
-```
-
-### 📷 Visual Architecture Diagram (PNG)
-
-![YubiKey + VDI + ServiceNow Secure Access Architecture](https://github.com/Suren-Jewels/YubiKey-VDI-ServiceNow-Support/blob/main/Yubikey_VDI_Secure_Access_Architecture.png?raw=true)
-
 ## 📊 Metrics Analyzed
 
 | Metric Category | Description |
