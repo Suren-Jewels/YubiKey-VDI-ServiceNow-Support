@@ -126,9 +126,8 @@ YubiKey-Security/
 - [`posture-baseline.md`](config/posture-baseline.md)  
 - [`identity-routing.md`](config/identity-routing.md)  
 - [`access-policy-reference.md`](config/access-policy-reference.md)  
-- Examples:  
-  - [`sample-posture.json`](config/examples/sample-posture.json)  
-  - [`sample-access-policy.json`](config/examples/sample-access-policy.json)  
+- [`sample-posture.json`](config/examples/sample-posture.json)  
+- [`sample-access-policy.json`](config/examples/sample-access-policy.json)  
 
 #### 📄 Documentation  
 - [`deployment-overview.md`](docs/deployment-overview.md)  
@@ -190,8 +189,15 @@ Only high‑level engineering concepts and troubleshooting patterns are document
 
 ---
 
-## 👔 Professional Context
+## 👔 Professional Context  
+
 **Suren Jewels**  
-Cloud & Infrastructure Engineer • Security • Automation • Zero Trust  
-LinkedIn: https://www.linkedin.com/in/suren-jewels/  
-GitHub: https://github.com/Suren-Jewels
+Cloud & Infrastructure Engineer • Security & Automation Specialist  
+
+This repository showcases sanitized engineering patterns and automation workflows used in enterprise ServiceNow environments.
+
+- **LinkedIn:** [https://www.linkedin.com/in/suren-jewels/](https://www.linkedin.com/in/suren-jewels/)
+- **GitHub:** [https://github.com/Suren-Jewels](https://github.com/Suren-Jewels)
+- **Email:** [SurenJewelsPro@gmail.com](mailto:SurenJewelsPro@gmail.com)
+
+---
